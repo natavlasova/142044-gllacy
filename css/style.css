@@ -199,8 +199,8 @@ textarea {
 	border-radius: 14px;
 }
 
-.main-navigation-first-li:hover > a,
-.main-navigation-first-li a:active {
+.first-li:hover > a,
+.first-li a:active {
 	margin-right: 3px;
 }
 
@@ -860,17 +860,18 @@ main .btn:active,
 
 .btn-item-hover {
 	position: absolute;
-	left: 38px;
-	bottom: 21px;
+	left: 10px;
+	bottom: 7px;
 
 	display: none;
-	width: 170px;
+	width: 247px;
 	padding: 11px 15px 1px 15px;
 
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
 
-	min-height: 34px;
+	min-height: 45px;
 }
 
 .col-3-content {
