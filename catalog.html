@@ -9,97 +9,100 @@
 	</head>
 	<body>
 		<header class="main-header container clearfix">			
-				<a class="logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
-				<nav class="main-navigation">
-					<ul>
-						<li class="main-navigation-li active">
-							<a href="#">Каталог</a>
-							<ul class="main-navigation-sub">				
-								<li>
-									<span class="sub-title">Новинки</span>
-								</li>
-								<li>
-									<a href="#">Сливочное</a>
-								</li>
-								<li>
-									<a class="activ" href="#">Щербеты</a>
-								</li>
-								<li>
-									<a href="#">Фруктовый лед</a>
-								</li>
-								<li>
-									<a href="#">Мелорин</a>
-								</li>
-							</ul>
-						</li>
-						<li class="main-navigation-li">
-							<a href="#">Доставка и оплата</a>
-						</li>
-						<li class="main-navigation-li">
-							<a href="#">О Компании</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="user-block">					
-					<div class="user-block-wrap">
-						<a class="btn btn-search" href="#">Поиск</a>
-						<div class="button-form search-block">
+			<a class="logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
+			<nav class="main-navigation">
+				<ul>
+					<li class="main-navigation-li active">
+						<a href="#">Каталог</a>
+						<ul class="main-navigation-sub">				
+							<li class="sub-li">
+								<span>Новинки</span>
+							</li>
+							<li class="sub-li">
+								<a href="catalog.html">Сливочное</a>
+							</li>
+							<li class="sub-li">
+								<a href="#">Щербеты</a>
+							</li>
+							<li class="sub-li">
+								<a href="#">Фруктовый лед</a>
+							</li>
+							<li class="sub-li">
+								<a href="#">Мелорин</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-navigation-li">
+						<a href="#">Доставка и оплата</a>
+					</li>
+					<li class="main-navigation-li">
+						<a href="#">О Компании</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">					
+				<div class="user-block-wrap">
+					<a class="btn-search" href="#">Поиск</a>
+					<div class="button-form search-block">
+						<div class="input-field">
+							<input type="search" id="search" name="search">
+							<label for="search">Что ищем?</label>
+						</div>	
+					</div>
+				</div>
+				<div class="user-block-wrap">
+					<a class="btn-signin" href="#">Вход</a>
+					<div class="button-form signin-block">									
+						<form action="#" method="get">
 							<div class="input-field">
-								<input type="search" id="search" name="search">
-								<label for="search">Что ищем?</label>
-							</div>	
-						</div>
+								<input type="email" id="email" name="email" required>
+								<label for="email">Электронная почта</label>
+							</div>
+							<div class="input-field">											
+								<input type="password" id="password" name="password"required>
+								<label for="password">Пароль</label>
+							</div>
+							<input class="btn" type="submit" value="Войти">
+							<div class="signin-block-again">
+								<a class="signin-link" href="#">Забыли пароль?</a>
+								<a class="signin-link" href="#">Новая регистрация</a>
+							</div>
+						</form>									
 					</div>
-					<div class="user-block-wrap">
-						<a class="btn btn-signin" href="#">Вход</a>
-						<div class="button-form signin-block">									
-							<form action="#" method="get">
-								<div class="input-field">
-									<input type="email" id="email" name="email" required>
-									<label for="email">Электронная почта</label>
-								</div>
-								<div class="input-field">											
-									<input type="password" id="password" name="password" required>
-									<label for="password">Пароль</label>
-								</div>
-								<input class="btn" type="submit" value="Войти">
-								<div class="signin-block-again">
-									<a class="signin-link" href="#">Забыли пароль?</a>
-									<a class="signin-link" href="#">Новая регистрация</a>
-								</div>
-							</form>									
-						</div>
-					</div>	
-					<div class="user-block-wrap">
-						<a class="btn btn-cart active" href="#">2 товара</a>
+				</div>	
+				<div class="user-block-wrap">
+					<a class="btn-cart full" href="#">2 товара</a>
 					<div class="button-form cart">
-						<table class="cart-items">
-							<tr class="item">
-								<td><button class="item-delete"><img src="img/icon-delete.svg" alt="Удалить" /></button></td>
-								<td><img src="img/ice-cream-1-little.jpg" alt="orange"></td>
-								<td>Пломбир с апельсиновым джемом</td>
-								<td>1,5кг <span class="price">x 200 руб.</span></td>
-								<td>300 руб.</td>
-							</tr>
-							<tr class="item">
-								<td><button class="item-delete"><img src="img/icon-delete.svg" alt="Удалить" /></button></td>
-								<td><img src="img/ice-cream-2-little.jpg" alt="strawberry"></td>
-								<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-								<td>1,5кг<span class="price">x 300 руб.</span></td>
-								<td>450 руб.</td>
-							</tr>
-						</table>
-						<div class="cart-full-cost">Итого: 750 руб.</div>
-            			<a class="btn btn-checkout" href="#">Оформить заказ</a>
+						<div class="order-line">
+							<button class="cart-delete"></button>
+							<div class="cart-title">            
+							<img src="img/ice-cream-1-little.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+							Пломбир с апельсиновым джемом
+							</div>
+							<div class="cart-price">1,5 кг x <span class="price-for-kg">200 руб.</span></div>
+							<div class="cart-worth">300 руб.</div>
+						</div>
+						<div class="order-line">
+							<button class="cart-delete"></button>
+							<div class="cart-title">            
+							<img src="img/ice-cream-2-little.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+							Клубничный пломбир с присыпкой из белого шоколада
+							</div>
+							<div class="cart-price">1,5 кг x <span class="price-for-kg">300 руб.</span></div>
+							<div class="cart-worth">450 руб.</div>
+						</div>
+						<div class="total-price">Итого: 750 руб.</div>
+						<div class="clearfix"></div>
+						<a class="btn" href="#">Оформить заказ</a>
 					</div>
-				</li>
-			</ul>
-		</header>
-		<main class="container clearfix">
+				</div>
+			</div>
 			<div class="working-time">
 				<p>C 10 до 20, ежедневно</p>
 				<p>8 812 450-25-25</p>
 			</div>
+		</header>
+		<main class="container clearfix">			
 			<ul class="breadcrumbs">
 				<li>
 					<a href="index.html">Главная</a><span class="raquo">&raquo;</span>
@@ -111,7 +114,7 @@
 					<span>Сливочное</span>
 				</li>
 			</ul>
-			<h1>Сливочное мороженое</h1>
+			<h1 class="topic">Сливочное мороженое</h1>
 			<form class="filter" action="/" method="get">
 				<fieldset>
 					<div class="filter-ice">
@@ -166,7 +169,7 @@
 					<input class="btn-filter" type="submit" value="Применить">
 				</fieldset>
 			</form>
-			<section class="catalog">
+			<section class="catalog clearfix">
 				<div class="row clearfix">
 					<article class="ice-cream">
 						<div class="item-hover">
@@ -181,7 +184,7 @@
 					<article class="ice-cream">
 						<div class="item-hover">
 							<a class="btn btn-item-hover" href="#">Быстрый просмотр</a>
-							<div class="ice-cream"-content">
+							<div class="ice-cream-content">
 								<img src="img/ice-cream-2.jpg" alt="kofe">
 								<p class="price"><span>380<img src="img/ruble.svg" width="31" height="33" alt="Рубль"></span>/кг</p>
 								<a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -309,10 +312,10 @@
 		</main>
 		<footer class="main-footer container clearfix">			
 				<div class="footer-social">
-					<a class="social-btn-tw" href="#">Твиттер</a>
-					<a class="social-btn-inst" href="#">Инстаграм</a>
-					<a class="social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn-vk" href="#">Вконтакте</a>
+					<a class="social btn-tw" href="#">Твиттер</a>
+					<a class="social btn-inst" href="#">Инстаграм</a>
+					<a class="social btn-fb" href="#">Фейсбук</a>
+					<a class="social btn-vk" href="#">Вконтакте</a>
 				</div>
 				<div class="footer-menu">
 					<div class="footer-info">
